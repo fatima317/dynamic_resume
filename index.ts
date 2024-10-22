@@ -43,10 +43,22 @@ form.addEventListener('submit', (event: Event) => {
             <h1><b></b> ${name}</h1>
             <section>
             <h2>Contact</h2>
+             <div class="contact-item">
+            <i class="fas fa-envelope"></i>
             <p><b>Email:</b> <a href=mailto:"${email}">${email}</a></p>
+            </div>
+             <div class="contact-item">
+            <i class="fas fa-phone"></i>
             <p><b>Phone:</b> ${phone}</p>
+              </div>
+            <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
             ${linkedIn ? `<p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>`:''}
+            </div>
+            <div class="contact-item">
+            <i class="fab fa-github"></i>
             ${github ? `<p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>`:''}
+            </div>
             </section>
             </aside>
 
@@ -91,11 +103,22 @@ form.addEventListener('submit', (event: Event) => {
         <h2><b>Resume</b></h2>
         <p><b>Name:</b> ${name}</p>
         <h3>Contact</h3>
+         <div class="contact-item">
+            <i class="fas fa-envelope"></i>
         <p><b>Email:</b> <a href=mailto:"${email}">${email}</a></p>
+         </div>
+            <div class="contact-item">
+            <i class="fas fa-phone"></i>
         <p><b>Phone:</b> ${phone}</p>
-        ${linkedIn ? `<p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>`:''}
-        ${github ? `<p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>`:''}
-
+         </div>
+            <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+             ${linkedIn ? `<p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>`:''}
+        </div>
+            <div class="contact-item">
+            <i class="fab fa-github"></i>
+             ${github ? `<p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>`:''}
+         </div>
         <section>
         <h3>Objective</h3>
         <p>${objective}</p>
@@ -103,22 +126,22 @@ form.addEventListener('submit', (event: Event) => {
 
         <section>
         <h3>Education</h3>
-        <p>${educationList}</p>
+        <ul>${educationList}</ul>
         </section>
 
         ${experienceList ? `<section>
         <h3>Experience</h3>
-        <p>${experienceList}</p>
+        <ul>${experienceList}</ul>
         </section>`:''}
 
         <section>
         <h3>Skills</h3>
-        <p>${skillList}</p>
+        <ul>${skillList}</ul>
         </section>
 
          ${projectList ? `<section>
         <h3>Projects</h3>
-        <p>${projectList}</p>
+        <ul>${projectList}</ul>
         </section>`:''}
         `;
 

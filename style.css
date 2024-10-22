@@ -78,7 +78,7 @@ body {
     color: #e9e3e3;
   }
   .sidebar a {
-    color: #1a73e8;
+    color: #fff;
     text-decoration: none;
   }
   
@@ -124,7 +124,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 16px; /* Consistent font size */
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 2px; /* Space between items */
     color: #333; /* Default text color */
   }
   
