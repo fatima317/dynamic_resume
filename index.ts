@@ -51,14 +51,14 @@ form.addEventListener('submit', (event: Event) => {
             <i class="fas fa-phone"></i>
             <p><b>Phone:</b> ${phone}</p>
               </div>
-            <div class="contact-item">
+             ${linkedIn ? `<div class="contact-item">
             <i class="fab fa-linkedin"></i>
-            ${linkedIn ? `<p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>`:''}
-            </div>
-            <div class="contact-item">
+           <p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>
+            </div>`:''}
+             ${github ? `<div class="contact-item">
             <i class="fab fa-github"></i>
-            ${github ? `<p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>`:''}
-            </div>
+           <p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>
+            </div>`:''}
             </section>
             </aside>
 
@@ -111,14 +111,14 @@ form.addEventListener('submit', (event: Event) => {
             <i class="fas fa-phone"></i>
         <p><b>Phone:</b> ${phone}</p>
          </div>
-            <div class="contact-item">
+            ${linkedIn ? `<div class="contact-item">
             <i class="fab fa-linkedin"></i>
-             ${linkedIn ? `<p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>`:''}
-        </div>
-            <div class="contact-item">
+             <p><b>LinkedIn:</b> <a href="${linkedIn}" target="_blank">${linkedIn}</a></p>
+        </div>`:''}
+            ${github ? `<div class="contact-item">
             <i class="fab fa-github"></i>
-             ${github ? `<p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>`:''}
-         </div>
+            <p><b>Github:</b> <a href="${github}" target="_blank">${github}</a></p>
+         </div>`:''}
         <section>
         <h3>Objective</h3>
         <p>${objective}</p>
